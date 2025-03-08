@@ -30,16 +30,19 @@ public class Estudiante {
     
     private String email;
 
+    private String nacionalidad;
+
    
 
     
-    public Estudiante(Long id, String tipoDocumento, String numeroDocumento, String nombre, String apellido, String email) {
+    public Estudiante(Long id, String tipoDocumento, String numeroDocumento, String nombre, String apellido, String email, String nacionalidad) {
         this.id = id;
         this.tipoDocumento = tipoDocumento;
         this.numeroDocumento = numeroDocumento;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
+        this.nacionalidad = nacionalidad;
     }
 
     
@@ -90,6 +93,18 @@ public class Estudiante {
     public void setEmail(String email) {
         this.email = email;
     }
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+    
+
+
+   
 
     @Override
     public String toString() {
@@ -102,4 +117,7 @@ public class Estudiante {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+
+  
 }
